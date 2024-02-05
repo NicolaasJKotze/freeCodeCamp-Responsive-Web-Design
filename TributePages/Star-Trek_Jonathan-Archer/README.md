@@ -1,6 +1,7 @@
 ===Final Result===
-<video src='TributePage_homework-2020-10-31_00.27.55_002.m4v'/>
- 
+
+https://github.com/NicolaasJKotze/freeCodeCamp-Responsive-Web-Design/assets/33121021/719f5b9c-d3b9-4ff8-8c10-ae2f3f059cf3
+
 ===Responsive Web Design Projects - Build a Tribute Page===
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNqgVx.
 
