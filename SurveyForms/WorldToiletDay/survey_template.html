@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<style>
+    
+</style>
+
+<html>
+<head>
+    <title>World Toilet Day survey</title>
+    
+    <!-- CDN for country and region values for select tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/country-region-dropdown-menu/2.2.0/js/geodatasource-cr.min.js" integrity="sha512-qmgcINnzhIr7rj29nX2wInb4R9WDFxQoDCNveb5BF1POAn8UGG42Z77SiNejX8JhKxRQfiSAbatR/BiT7VfumQ==" crossorigin="anonymous"></script>
+
+    <!-- CDN for country and region values for select tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/country-region-dropdown-menu/2.2.0/js/Gettext.min.js" integrity="sha512-3Z7tWmorE4Uvx/AaqclYTqTLs5yP+QAf0/Y4pDfcdHdZ1/k4BtBHtzuKcELQ8+CZfF1kOE5DxQjiO38NjUJ0+A==" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+<!--SECTION: WELCOME-->
+<h1>Toilet Day</h1>
+<p>It is a basic human right.</p>
+<form action="something-Python">
+
+<!--SECTION: BASIC PERSONAL INFORMATION-->
+<fieldset id="basic_personal_information" class="fieldset">
+    <legend style="font-weight: bold;">BASIC PERSONAL INFORMATION</legend>
+    <label for="field_name">First Name:</label>
+    <input type="text" id="field_name" name="field_name"><br>
+    <label for="field_surname">Surname:</label>
+    <input type="text" id="field_surname" name="field_surname"><br>
+    <label for="field_email">Email:</label>
+    <input type="text" id="field_email" name="field_email"><br>
+    <label for="field_phone">Phone Number:</label>
+    <input type="text" id="field_phone" name="field_phone" minlength="5">
+    <br>
+    
+</fieldset>
+<hr>
+
+<!--SECTION: DEMOGRAPHICS-->
+
+    <!-- Employment Statuses
+    I am unemployed 
+    I am furloughed
+    I am in school
+    I am in school and employed part time
+    I am a full time student
+    I am employed full time 
+    I am employed part time 
+    I am semi-retired
+    I am fully retired
+    Prefer not to say
+    -->
+
+<fieldset id="demographics">
+    <legend style="font-weight: bold;">DEMOGRAPHICS</legend>
+    
+    <label for="field_gender">Gender:</label>
+        <select id="gender">
+            <option value="Undefined">Undefined</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Trans">Trans</option>
+            <option value="Non Binary">Trans</option>
+            <option value="Prefer not to say">Trans</option>
+        </select>
+    <br>
+    
+    <label for="field_age">Age:</label>
+    <input type="text" id="field_age" name="field_age">
+    <br>
+    
+    <label for="field_disability">Disability:</label>
+        <select id="disability">
+            <option value="No"></option>
+            <option value="Mental"></option>
+            <option value="Physical"></option>
+        </select>
+    <br>
+
+    <!-- Use the CDN scripts for data -->
+    <label for="field_country">Country:</label>
+        <select class="gds-cr" country-data-region-id="gds-cr-one"  data-                       language="en"></select>
+    <br>
+    
+    <!-- Use the CDN scripts for data -->
+    <label for="field_region">Region:</label>
+        <select id="gds-cr-one" ></select><br><br>
+    <br>
+    
+</fieldset>
+<hr>
+
+<!--SECTION: CONTEXT-->
+<fieldset id="context">
+    <legend style="font-weight: bold;">CONTEXT</legend>
+
+    <!-- GROUP : HOME -->
+    <fieldset id="context_home">
+        <legend style="font-weight: bold;">HOME</legend>
+        <p>The purpose of this sub section is to determine what your sanitation situation is at home, where you live.</p>
+
+        <!-- ACCESS -->
+        <fieldset id="context_home_access">
+            <legend style="font-weight: bold;">Access</legend>
+            <p>Is there a toilet you can use?</p>
+            <input type="radio" id="r_contextHomeAccess_yes" name="context_home_access" value="Yes">Yes</input><br>
+            <input type="radio" id="r_contextHomeAccess_no" name="context_home_access" value="No">No</input><br>
+            <input type="radio" id="r_contextHomeAccess_yesPay" name="context_home_access" value="YesPay">Yes, but I have to pay for access.</input><br>
+        </fieldset>
+        <hr>
+
+        <!-- DISTANCE -->
+        <fieldset id="context_home_???">
+            How far do you think you have to walk?<br>
+            OR<br>
+            How long do you think you have to walk?<br>
+        </fieldset>
+        <hr>
+
+        <!-- WAITING QUEUE -->
+        <fieldset id="context_home_???">
+            How many people tend to be in the queue when you get there?<br>
+            How long do you think you have to queue?<br>
+            Are there benches to sit while waiting in the queue?<br>
+        </fieldset>
+        <hr>
+
+        <!-- FUNCTIONAL -->
+        <fieldset id="context_home_???">
+            How many toilets are there?<br>
+            How frequently is a toilet not working?<br>
+            How frequently is a toilet leaking water?<br>
+            How frequently is the seat broken or missing?<br>
+        </fieldset>
+        <hr>
+
+    </fieldset>
+    <hr>
+
+    <!-- GROUP : WORK -->
+    <fieldset id="context_work">
+        <legend style="font-weight: bold;">WORK</legend>
+        <p>The purpose of this sub section is to determine what your sanitation situation is where you work at.</p>
+        
+        <fieldset id="context_home_gender">
+            <legend style="font-weight: bold;">Gender Toilet</legend>
+            <p>Is the toilet suitable for every gender?</p>
+            <input type="radio" id="r_contextHomeGender_yes" name="context_home_access" value="Yes">Yes</input><br>
+            <input type="radio" id="r_contextHomeGender_no" name="context_home_access" value="No">No</input><br>
+            <input type="text" id="txt_contextHomeGender_shared" name="context_home_access">Comment</input><br>
+        </fieldset>
+    </fieldset>
+    <hr>
+
+    <!-- GROUP : COMMUTE -->
+    <fieldset id="context_commute">
+        <legend style="font-weight: bold;">COMMUTE</legend>
+        <p>The purpose of this sub section is to determine what your sanitation situation is when you travel to work from home or to home from work.</p>
+        <fieldset id="context_home_gender">
+            <legend style="font-weight: bold;">Gender Toilet</legend>
+            <p>Is the toilet suitable for every gender?</p>
+            <input type="radio" id="r_contextHomeGender_yes" name="context_home_access" value="Yes">Yes</input><br>
+            <input type="radio" id="r_contextHomeGender_no" name="context_home_access" value="No">No</input><br>
+            <input type="text" id="txt_contextHomeGender_shared" name="context_home_access">Comment</input><br>
+        </fieldset>
+    </fieldset>
+
+</fieldset>
+<hr>
+
+<button type="submit" id="btn_submit">SUBMIT</button>
+<button type="clear" is="btn_clear">CLEAR FORM</button>
+
+<!--SECTION: THANKS-->
+
+</form>
+<footer>
+    <p>freeCodeCamp.org | project 2: Survey</p>
+</footer>
+
+</body>
+</html>

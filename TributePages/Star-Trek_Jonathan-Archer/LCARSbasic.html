@@ -1,0 +1,397 @@
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+
+<!--
+freeCodeCamp Responsive Web Design Challenge Project 1: Tribute Page
+
+This tribute page goal are as follow:
+1. Meet the minimum requirements specificied according to the tests.
+2. Load under 15seconds on 14kbps (<100Kb in total size including images)
+3. Render correctly in a Command Line Interface browser such as w3M.
+4. Support screen readers.
+5. Only use basic HTML and CSS.
+6. Support Chrome, Firefox, Falkon, and NEtSurf browsers.
+-->
+
+
+<style> 
+
+/* CSS global styles */
+
+body {font-family: arial;
+background-color: black;
+color: white;}
+
+h1 { font-size: 40px;
+ text-align: center;
+ font-family: Impact;
+ color: black;
+ padding-right: 10px;}
+h2 { font-size: 36px;
+ font-weight: bold;
+ text-align: center;
+ font-family: Verdana;
+ color: White;}
+h3 { font-size: 25px;
+font-family: impact;
+ font-weight: bold;
+ color: White;
+ text-align: right;}
+h4 { font-size: 16px;
+ font-weight: bold;}
+h5 { font-size: 14px;
+ font-weight: bold;}
+h6 { font-size: 14px;
+ font-weight: bold;}
+p { font-size: 15px;}
+
+img {max-width: 100%;
+height: auto;}
+
+figcaption { text-align: center;
+font-style: italic;}
+
+table { font-family: arial;
+font-size: 15px;}
+
+td:first-child {font-weight: bold;
+text-align: right;
+background-color: darkolivegreen;
+width: 125px;}
+
+td:nth-child(2){ border-bottom: 1px solid black;
+ border-collapse: colapse;}
+
+footer{font-style: italic;}
+
+/* CSS ID and Class declaration */
+
+#quote{font-style: italic;
+text-align: center;}
+
+#quoteby{text-align: right;}
+
+.div_main { display: grid; 
+grid-template-columns: 50px auto 50px; 
+grid-column-gap: 5px;
+grid-row-gap: 5px;}
+
+.div_leftBorder_Top{ background-color: orange;}
+.div_leftBorder_Quote{ background-color: lightblue;}
+.div_leftBorder_Picture{ background-color: lightcoral;}
+.div_leftBorder_Introduction{ background-color: pink;}
+.div_leftBorder_Personal{ background-color: pink;}
+.div_leftBorder_Timeline{ background-color: pink;;}
+.div_leftBorder_References{ background-color: orange;;}
+
+</style> 
+
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <title id="title">Tribute Page to Star Trek Captain Jonathan Archer</title>
+  <header>
+  </header>
+  
+  <body id="main">
+   <div class="div_main">
+
+<!-- TITLE -->
+
+      <div class="div_leftBorder_Top" 
+         style="background-color: orange; 
+         border-top-left-radius: 50%;">
+      </div>
+      <div class="Title" 
+         style="background-color: orange;">
+         <h1 style="text-align: right;">TRIBUTE PAGE</h1>
+      </div>
+      <div class="div_rightBorder_Top" 
+         style="background-color: orange; 
+           border-top-right-radius: 50%;
+           border-bottom-right-radius: 50%;">
+      </div>
+
+<!-- SUBTITLE -->
+
+      <div class="div_leftBorder_Top">
+      </div>
+      <div>
+         <h2>Captain Jonathan Archer</h2>
+      </div>
+      <div class="div_rightBorder_Top">
+      </div>
+
+<!-- DIVIDER -->
+
+      <div class="div_leftBorder_Top" 
+         style="background-color: orange; 
+         border-bottom-left-radius: 50%;">
+      </div>
+      <div style="background-color: orange;">.
+      </div>
+      <div class="div_rightBorder_Top" 
+         style="background-color: orange;
+         border-top-right-radius: 50%;">
+      </div>
+
+      <div class="div_leftBorder_Quote" 
+         style=" border-top-left-radius: 50%;">
+      </div>
+      <div class="div_leftBorder_Quote">.
+      </div>
+      <div class="div_leftBorder_Quote" 
+         style="border-bottom-right-radius: 50%;">
+      </div>
+
+<!-- QUOTE-->
+
+      <div class="div_leftBorder_Quote">
+      </div>
+      <div class="quote">
+         <p id="quote">
+           "Someday ... my people are going to come up with some sort of a doctrine, something that tells us what we can and can't do out here, should and shouldn't do. But until somebody tells me that they've drafted that directive … I'm going to have to remind myself every day ... that we didn't come out here to play God."<br>
+         </p>      
+         <p id="quoteby">- Archer, foreshadowing the Prime Directive</p>
+      </div>
+      <div class="div_rightBorder_Quote">
+      </div>
+
+<!-- DIVIDER -->
+
+      <div class="div_leftBorder_Quote" 
+         style="border-bottom-left-radius: 50%;">
+      </div>
+      <div class="div_leftBorder_Quote">.
+      </div>
+      <div class="div_leftBorder_Quote" 
+         style="border-top-right-radius: 50%;">
+      </div>
+
+      <div class="div_leftBorder_Picture" 
+         style=" border-top-left-radius: 50%;">
+      </div>
+      <div class="div_leftBorder_Picture">.
+      </div>
+      <div class="div_leftBorder_Picture" 
+         style="border-bottom-right-radius: 50%;">
+      </div>
+
+<!-- PICTURE -->
+
+      <div class="div_leftBorder_Picture">
+      </div>
+      <div id="img-div" class="div_Picture">
+         <p>
+   	     <!-- PROFILE PICTURE -->
+   	     <img id="image" src="https://1.bp.blogspot.com/-8bORLW5fPL8/WpNSA41CagI/AAAAAAAAAnc/nkmCpu_mjTUMROGmocC6rpitMDkJbTiIwCLcBGAs/s400/ENT2x05.jpg" style="display: block;
+            margin-left: auto; margin-right: auto;" alt="Profile photo"/><br>
+            <figcaption id="img-caption">Profile photo of Captain Archer look off to the camera sitting with his Beagle dog, Porthos.
+            </figcaption>
+         </p>
+      </div>
+      <div></div>
+
+<!-- DIVIDER -->
+
+      <div class="div_leftBorder_Picture" 
+         style="border-bottom-left-radius: 50%;">
+      </div>
+      <div class="div_leftBorder_Picture">.
+      </div>
+      <div class="div_leftBorder_Picture" 
+         style="border-top-right-radius: 50%;">
+      </div>
+
+      <div class="div_leftBorder_Introduction" 
+         style=" border-top-left-radius: 50%;">
+      </div>
+      <div class="div_leftBorder_Introduction">.
+      </div>
+      <div class="div_leftBorder_Introduction" 
+         style="border-bottom-right-radius: 50%;">
+      </div>
+
+<!-- INTRODUCTION -->
+
+      <div class="div_leftBorder_Introduction">
+      </div>
+      <div id="tribute-info" class="div_Introduction">
+         <p>
+            <!-- INTRODUCTION -->
+            <h3>Introduction</h3>
+            <p>Jonathan Archer was a 22nd century Human Starfleet officer and captain of Enterprise NX-01, United Earth's first full-fledged starship. In that role, he was responsible for greatly expanding United Earth's presence in the Alpha and Beta Quadrants and making first contact with more than a dozen species, among them Klingons, Andorians, and Xindi.
+               Considered by historian John Gill, as the "greatest explorer of the 22nd century," Archer is widely credited with saving Earth from the Xindi and paving the way for the founding of the United Federation of Planets. He went on to become one of the Federation's earliest presidents.
+            </p>
+         </p>
+      </div>
+      <div>
+      </div>
+
+<!-- DIVIDER -->
+
+      <div class="div_leftBorder_Introduction" 
+         style="border-bottom-left-radius: 50%;">
+      </div>
+      <div class="div_leftBorder_Introduction">.
+      </div>
+      <div class="div_leftBorder_Introduction" 
+         style="border-top-right-radius: 50%;">
+      </div>
+
+      <div class="div_leftBorder_Personal" 
+         style=" border-top-left-radius: 50%;">
+      </div>
+      <div class="div_leftBorder_Personal">.
+      </div>
+      <div class="div_leftBorder_Personal" 
+         style="border-bottom-right-radius: 50%;">
+      </div>
+
+<!-- PERSONAL -->
+
+      <div class="div_leftBorder_Personal">
+      </div>
+      <div class="personal">
+         <p>
+            <h3>Personal Details</h3>
+            <table>
+               <tr><td>Gender</td><td>Male</td></tr>
+               <tr><td>Species</td><td>Human</td></tr>
+               <tr><td>Blood Type</td><td>B-negative</td></tr>
+               <tr><td>Affiliation</td><td> United Earth Starfleet <br>
+                  Coalition of Planets <br>
+                  Federation Starfleet <br>
+                  Andorian Imperial Guard (honorary member)</td></tr>
+               <tr><td>Rank</td><td>Admiral (retired)</td></tr>
+               <tr><td>Occupation</td><td>Commanding officer, Enterprise NX-01 <br>
+                  Chief of Staff, Starfleet Command <br>
+                  Ambassador to Andoria <br>
+                  Federation Councilman <br>
+                  President of the United Federation of Planets</td></tr>
+               <tr><td>Serial Number</td><td>SA-022-9237-CY</td></tr>
+               <tr><td>Status</td><td>Active (2233) <br>
+                  Active (2258, alternate reality)</td></tr>
+               <tr><td>Born</td><td>2112, Upstate New York, North America, Earth</td></tr>
+               <tr><td>Father</td><td>Henry Archer</td></tr>
+               <tr><td>Mother</td><td>Sally Archer</td></tr>
+               <tr><td>Other Relative(s)</td><td>A great-grandfather</td></tr>
+               <tr><td>Marital Status</td><td> Single</td></tr>
+               <tr><td>Played By</td><td>Scott Bakula (2143 - 2161)<br>
+                  Marty Davis (2121)</td></tr>
+            </table>
+         </p>
+      </div>
+      <div>
+      </div>
+
+<!-- DIVIDER -->
+
+      <div class="div_leftBorder_Introduction" 
+         style="border-bottom-left-radius: 50%;">
+      </div>
+      <div class="div_leftBorder_Introduction">.
+      </div>
+      <div class="div_leftBorder_Introduction" 
+         style="border-top-right-radius: 50%;">
+      </div>
+
+      <div class="div_leftBorder_Personal" 
+         style=" border-top-left-radius: 50%;">
+      </div>
+      <div class="div_leftBorder_Personal">.
+      </div>
+      <div class="div_leftBorder_Personal" 
+         style="border-bottom-right-radius: 50%;">
+      </div>
+
+<!-- TIMELINE -->
+
+      <div class="div_leftBorder_Timeline">
+      </div>
+      <div class="timeline">
+         <p>
+            <h3>Timeline</h3>
+            <table>
+               <tr><td>2112: </td><td>Born in upstate New York on Earth to Henry and Sally Archer</td></tr>
+               <tr><td>2124: </td><td>Henry Archer dies of Clarke's Disease</td></tr>
+               <tr><td>2143: </td><td>Along with A.G. Robinson, becomes the first Human to achieve warp 2.5</td></tr>
+               <tr><td>2150: </td><td>Becomes commanding officer of the starship Enterprise NX-01</td></tr>
+               <tr><td>2151: </td><td>Enterprise launches <br>
+                                      Becomes one of the first Humans to set foot on Qo'noS<br>
+                                      Makes first contact with the Suliban<br>
+                                      Makes first contact with the Xyrillians<br>
+                                      Makes first contact with the Andorians<br>
+                                      Initiates first Human-initiated first contact with a sentient species, the Akaali<br>
+                                      Makes first contact with the Kreetassans</td></tr>
+               <tr><td>2152: </td><td>Begins second year of deep space exploration, commanding Enterprise<br>
+                                      Orders Enterprise to exceed Warp 5 for the first time.<br>
+                                      Travels to the 31st century and learns he will become an important part of the formation of the United Federation of Planets<br>
+                                      Makes First contact with the Arkonians<br>
+                                      Makes first contact with the Tholians<br>
+                                      Put on trial on Narendra III by the Klingons<br>
+                                      Makes first contact with the Tellarites </td></tr>
+               <tr><td>2153: </td><td>Given the mission to destroy the Xindi weapon<br>
+                                      Transformed into a Loque'eque<br>
+                                      Travels back in time to the year 2004</td></tr>
+               <tr><td>2154: </td><td>Completes the mission in the Delphic Expanse by destroying the Xindi weapon<br>
+                                      Travels to the mid-20th century<br>
+                                      Holds the katra of Surak for a short time<br>
+                                      Makes first contact with the Organians<br>
+                                      Transformed into a Klingon hybrid</td></tr>
+               <tr><td>2155: </td><td>Attends the opening ceremony of the Coalition of Planets</td></tr>
+               <tr><td>2161: </td><td>Final year commanding Enterprise<br>
+                                      Helps rescue the daughter of Shran<br>
+                                      Signs the Federation Charter</td></tr>
+               <tr><td>2169: </td><td>Becomes Federation Ambassador to Andoria</td></tr>
+               <tr><td>2175: </td><td>Serves as Federation Councilor</td></tr>
+               <tr><td>2184: </td><td>Elected as Federation President</td></tr>
+               <tr><td>2192: </td><td>Steps down as Federation President</td></tr>
+            </table>
+         </p>
+      </div>
+      <div>
+      </div>
+
+<!-- DIVIDER -->
+
+      <div class="div_leftBorder_Introduction" 
+         style="border-bottom-left-radius: 50%;">
+      </div>
+      <div class="div_leftBorder_Introduction">.
+      </div>
+      <div class="div_leftBorder_Introduction" 
+         style="border-top-right-radius: 50%;">
+      </div>
+
+      <div class="div_leftBorder_Top" 
+         style=" border-top-left-radius: 50%;">
+      </div>
+      <div class="div_leftBorder_Top">.
+      </div>
+      <div class="div_leftBorder_Top">
+      </div>
+
+<!-- REFERENCE -->
+
+      <div class="div_leftBorder_References" 
+         style="border-bottom-left-radius: 50%;">
+      </div>
+      <div class="references">
+         <p>
+            <!-- Link to Project Plan PDF, freeCodeCamp, LinkedIn, Licenses, -->	
+            <h3>References</h3>
+            <p>A HUGE THANK YOU to the everyone involved at Memory-Alpha for the information. <a id="tribute-link" target="_blank" href="https://memory-alpha.fandom.com/wiki/Jonathan_Archer">https://memory-alpha.fandom.com/wiki/Jonathan_Archer</a></p>
+         </p>
+      </div>
+      <div id="div_rightBorder_Bottom" class="div_rightBorder_Bottom" 
+         style="background-color: orange;
+         border-bottom-right-radius: 50%;">
+      </div>
+   <body>
+   
+   <div></div>
+	<footer>
+		<p>Last Updated: varDeployedDateTime</p>
+	</footer>
+<html>
