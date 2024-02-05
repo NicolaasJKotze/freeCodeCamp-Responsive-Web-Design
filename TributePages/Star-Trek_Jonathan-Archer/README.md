@@ -1,8 +1,9 @@
-===Final Result===
+# Responsive Web Design Projects - Build a Tribute Page
 
-https://github.com/NicolaasJKotze/freeCodeCamp-Responsive-Web-Design/assets/33121021/719f5b9c-d3b9-4ff8-8c10-ae2f3f059cf3
+# Final Result
 
-===Responsive Web Design Projects - Build a Tribute Page===
+https://github.com/NicolaasJKotze/freeCodeCamp-Responsive-Web-Design/assets/33121021/953f87cb-0d4d-406a-9c95-367cd71aed93
+
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNqgVx.
 
 Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
